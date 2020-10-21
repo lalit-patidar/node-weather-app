@@ -1,5 +1,3 @@
-console.log('hello aap sabhi ko')
-
 setInterval(() => {
     clock()
 }, 1000);
