@@ -1,0 +1,42 @@
+#helo{
+    width: 50%;
+    background-color: seagreen;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+h1{
+    color: rgb(127, 182, 204);
+}
+
+#about-D{
+    text-align: centre;
+    font-family: sans-serif;
+    padding: 0 500px;
+}
+
+img{
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+#header{
+    color: black;
+    margin: 0 auto;
+    /* padding: 0 500px; */
+}
+
+#one {
+    margin: 0, auto;
+    text-align: center;
+     
+}
+
+#two{
+    text-align: center;
+}
+
