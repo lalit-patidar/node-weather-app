@@ -7,6 +7,7 @@ const { request } = require('http')
 const forcast = require('./weatherApi/forcast')
 
 const app = express()
+const port = process.env.PORT || 3000
 
 // define path for express
 const publicDirectorypath = path.join(__dirname, '..', '/public')
@@ -93,7 +94,7 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log('server is running at port 3000')
+app.listen(port, () => {
+    console.log('server is running at port' + port)
 })
 
