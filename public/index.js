@@ -49,8 +49,6 @@ formData.addEventListener('submit', (e) => {
         })
     
     })
-
-    // document.getElementById("show").innerHTML = location;
 })
 
 
