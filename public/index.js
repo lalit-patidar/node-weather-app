@@ -38,7 +38,7 @@ formData.addEventListener('submit', (e) => {
     messageTwo.textContent = ''
 
     //  fetch api is used to collect data from url but it work for only clint side js
-    fetch('http://localhost:3000/weather?address=' + location).then((response) => {
+    fetch('/weather?address=' + location).then((response) => {
         response.json().then((data) => {
             if (data.error) {
                 messageOne.textContent = data.error
