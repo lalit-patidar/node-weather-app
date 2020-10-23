@@ -1,6 +1,6 @@
 const path = require('path')  // this is the inbuild module of node 
 const hbs = require('hbs')
-const express = require('express')
+// const express = require('express')
 const { ok } = require('assert')
 const geocode = require('./weatherApi/geocode')
 const { request } = require('http')
@@ -19,9 +19,7 @@ console.log(viewsPath)
 app.use(express.static(publicDirectorypath))  // it show the given file data at your given port
 
 app.get('', (req, res) => {
-    res.render('index', {
-        name: 'lalit'
-    })
+    res.render('index')
 })
 
 // setup handelbar engine and views directory
