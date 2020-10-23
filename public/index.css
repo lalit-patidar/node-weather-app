@@ -40,3 +40,26 @@ img{
     text-align: center;
 }
 
+input{
+    padding: 10px;
+    border: 1px solid black;
+    
+}
+
+form{
+     margin: 0, auto;
+    
+}
+
+button{
+     padding: 7px; 
+     color: white;
+     background-color: blue;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+}
+
+#allin{
+    text-align: center;
+}

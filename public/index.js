@@ -1,3 +1,5 @@
+
+
 setInterval(() => {
     clock()
 }, 1000);
@@ -22,12 +24,13 @@ function clock() {
 
 // to collect the data of form form user
 
-const formData = document.querySelector('form');
+const formData = document.querySelector("form");
 const search = document.querySelector('input');
 const messageOne = document.querySelector('#message-1')
 const messageTwo = document.querySelector('#message-2')
 
 formData.addEventListener('submit', (e) => {
+    
     e.preventDefault()
     const location = search.value
     
@@ -35,7 +38,7 @@ formData.addEventListener('submit', (e) => {
     messageTwo.textContent = ''
 
     //  fetch api is used to collect data from url but it work for only clint side js
-    fetch('/weather?address=' + location).then((response) => {
+    fetch('http://localhost:3000/weather?address=' + location).then((response) => {
         response.json().then((data) => {
             if (data.error) {
                 messageOne.textContent = data.error
@@ -43,7 +46,7 @@ formData.addEventListener('submit', (e) => {
             } else {
                 // document.getElementById("lilly").innerHTML = `weather in <b>${data.temperature}</b> now <b>${data.weather}</b>`
                 messageOne.textContent = data.location;
-                messageTwo.textContent = `temperature in ${data.address} is ${data.temperature}`;
+                messageTwo.textContent = `temperature in ${data.address} is ${data.temperature}° and the weather is ${data.weather}`;
             }
             
         })
